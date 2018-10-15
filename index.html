@@ -1,20 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SEAL</title>
 
-    <!-- Bootstrap -->
-    <link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SEAL</title>
 
-  </head>
-  <body>
-    
+	<!-- Bootstrap -->
+	<link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	 crossorigin="anonymous">
+</head>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<span>
+					<i class="glyphicon glyphicon-earphone"></i> Fono SEAL: (054) 381-188
+				</span>
+				<div class="pull-right">
+					<span>
+						<i class="fas fa-flag"></i> Transparencia
+					</span>
+					<span>
+						<i class="fas fa-laptop"></i> Mapa de Sitio
+					</span>
+					<span>
+						<i class="fas fa-map-marked-alt"></i> Oficina Virtual
+					</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-8 col-md-3">
+					<div class="input-group">
+						<input type="text" name="q" class="form-control" placeholder="Buscar en SEAL...">
+						<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+							</button>
+						</span>
+					</div>
+				</div>
+				<div class="col-md-1">
+					<span>
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+					</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<img src="./assets/img/logo_seal.jpg" alt="Seal Logo" class="img-responsive">
+				</div>
+				<div class="col-md-2">
+					<img src="./assets/img/logo_peru.png" alt="El Perú Primero" class="img-responsive">
+				</div>
+				<div class="col-md-8 pull-right">
+          <nav class="navbar-right">
+              <a href="">
+                  Inicio
+                </a>
+                <a href="">
+                  Empresa
+                </a>
+                <a href="">
+                  Atención al Cliente
+                </a>
+                <a href="">
+                  Sustentabilidad
+                </a>
+                <a href="">
+                  Proyectos
+                </a>
+                <a href="">
+                  Noticias
+                </a>
+                <a href="">
+                    Convocatorias
+                </a>
+          </nav>  
+					
+				</div>
+
+			</div>
+		</div>
+  </header>
+  
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
+<style>
+	input[type="text"] {
+		color: #666;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 2px;
+		box-shadow: none;
+		background-color: #374850;
+		border: 1px solid transparent;
+		/* height: 35px; */
+	}
+
+</style>
