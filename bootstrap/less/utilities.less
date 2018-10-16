@@ -9,12 +9,15 @@
 .clearfix {
   .clearfix();
 }
+
 .center-block {
   .center-block();
 }
+
 .pull-right {
   float: right !important;
 }
+
 .pull-left {
   float: left !important;
 }
@@ -27,12 +30,15 @@
 .hide {
   display: none !important;
 }
+
 .show {
   display: block !important;
 }
+
 .invisible {
   visibility: hidden;
 }
+
 .text-hide {
   .text-hide();
 }
@@ -53,3 +59,59 @@
 .affix {
   position: fixed;
 }
+
+// Margins
+// -------------------------
+
+.with-margin {
+  margin: @margin-size;
+}
+
+.with-margin-vertical {
+  margin-top: calc(@margin-size + 5px);
+  margin-bottom: @margin-size;
+}
+
+.with-margin-right {
+  margin-right: @margin-size;
+}
+
+.with-margin-left {
+  margin-left: @margin-size;
+}
+
+.with-margin-top {
+  margin-top: @margin-size;
+}
+
+.with-margin-right {
+  margin-bottom: @margin-size;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+
+// Borders
+// -------------------------
+
+.with-border-bottom {
+  border-bottom: solid 1px @border-color;
+}
+
+.line-divider {
+  border-top: 1px solid @border-color;
+  margin-left: -100vw;
+  margin-right: -100vw;
+}
+
+.with-shadow {
+  box-shadow: 0px 9px 18px 5px rgba(0,0,0,0.23);
+}
+
+
