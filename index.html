@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SEAL</title>
-
 	<!-- Bootstrap -->
 	<link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Font Awesome -->
@@ -15,81 +14,139 @@
 </head>
 
 <body>
-	<header>
+	<header class="with-shadow">
 		<div class="container">
-			<div class="row">
-				<span>
-					<i class="glyphicon glyphicon-earphone"></i> Fono SEAL: (054) 381-188
-				</span>
-				<div class="pull-right">
-					<span>
-						<i class="fas fa-flag"></i> Transparencia
-					</span>
-					<span>
-						<i class="fas fa-laptop"></i> Mapa de Sitio
-					</span>
-					<span>
-						<i class="fas fa-map-marked-alt"></i> Oficina Virtual
-					</span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-offset-8 col-md-3">
-					<div class="input-group">
-						<input type="text" name="q" class="form-control" placeholder="Buscar en SEAL...">
-						<span class="input-group-btn">
-							<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-							</button>
-						</span>
+			<div class="row custom-header">
+				<div class="col-md-12">
+					<div class="header-item">
+						<i class="glyphicon glyphicon-earphone"></i> Fono SEAL: (054) 381-188
+					</div>
+					<div class="pull-right">
+						<ul class="header-item-list">
+							<li class="header-item">
+								<a href="">
+									<i class="fas fa-flag"></i> Transparencia
+								</a>
+							</li>
+							<li class="header-item">
+								<a href="">
+									<i class="fas fa-sitemap"></i>Mapa de Sitio
+								</a>
+							</li>
+							<li class="header-item active">
+								<a href="">
+									<i class="fas fa-laptop"></i> Oficina Virtual
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
+			</div>
+			<div class="line-divider"></div>
+			<div class="row with-margin-vertical">
+				<div class="col-md-offset-8 col-md-3">
+					<form class="search" method="get" action="#" role="search">
+						<div class="form-group">
+							<input name="s" type="search" placeholder="Buscar en Seal" class="search-field" value="">
+							<span class="fa fa-search"></span>
+						</div>
+					</form>
+				</div>
 				<div class="col-md-1">
-					<span>
-						<i class="fab fa-facebook-f"></i>
-						<i class="fab fa-twitter"></i>
-						<i class="fab fa-instagram"></i>
+					<span class="social-icons">
+						<a href="https://www.facebook.com/SealArequipa/" target="a_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="" target="a_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="" target="a_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
 					</span>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-2">
+				<!-- <div class="col-md-2">
 					<img src="./assets/img/logo_seal.jpg" alt="Seal Logo" class="img-responsive">
 				</div>
 				<div class="col-md-2">
 					<img src="./assets/img/logo_peru.png" alt="El Perú Primero" class="img-responsive">
-				</div>
-				<div class="col-md-8 pull-right">
-					<nav class="navbar-right">
-						<a href="">
-							Inicio
-						</a>
-						<a href="">
-							Empresa
-						</a>
-						<a href="">
-							Atención al Cliente
-						</a>
-						<a href="">
-							Sustentabilidad
-						</a>
-						<a href="">
-							Proyectos
-						</a>
-						<a href="">
-							Noticias
-						</a>
-						<a href="">
-							Convocatorias
-						</a>
-					</nav>
+				</div> -->
+				<!-- <div class="col-md-8"> -->
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+							 aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- <img src="./assets/img/logo_seal.jpg" alt="Seal Logo" class="img-responsive" height="100px">
+								<img src="./assets/img/logo_peru.png" alt="El Perú Primero" class="img-responsive"> -->
+							<!-- <div class="col-md-2">
+										<img src="./assets/img/logo_seal.jpg" alt="Seal Logo" class="img-responsive">
+									</div>
+									<div class="col-md-2">
+										<img src="./assets/img/logo_peru.png" alt="El Perú Primero" class="img-responsive">
+									</div> -->
+						</div>
 
-				</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active">
+									<a href="#">
+										<span>Inicio</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span>Empresa</span>
 
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span>Atención al Cliente</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span>Sustentabilidad</span>
+
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span>Proyectos</span>
+
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span>Noticias</span>
+
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span>Convocatorias</span>
+
+									</a>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+				<!-- </div> -->
 			</div>
 		</div>
 	</header>
 	<!-- Caraousel -->
-	<section>
+	<section class="bg-dark">
 		<div class="container">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
@@ -102,18 +159,14 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="..." alt="...">
-						<div class="carousel-caption">
-							...
-						</div>
+						<img src="./assets/img/slide1.jpeg" alt="Sedapar">
 					</div>
 					<div class="item">
-						<img src="..." alt="...">
-						<div class="carousel-caption">
-							...
-						</div>
+						<img src="./assets/img/slide1.jpeg" alt="Sedapar">
 					</div>
-					...
+					<div class="item">
+						<img src="./assets/img/slide1.jpeg" alt="Sedapar">
+					</div>
 				</div>
 
 				<!-- Controls -->
@@ -130,15 +183,15 @@
 
 	</section>
 	<!-- Cortes Programados y Servicios-->
-	<section>
+	<section class="bg-dark section">
 		<div class="container">
 			<div class="row">
 				<!-- Cortes Programados -->
-				<div class="col-md-4">
-					<span><i class="far fa-calendar"></i>Cortes Programados</span>
-					<div>
-						<div class="row">
-							<div class="col-xs-2">
+				<div class="col-md-4 box box-info">
+					<div class="box-header"><i class="far fa-calendar with-margin-right"></i> Cortes Programados </div>
+					<!-- <div class="box-body">
+						<div class="row box-item">
+							<div class="col-xs-2 ">
 								<span>
 									<p>
 										14
@@ -171,34 +224,33 @@
 								<p>Por trabajos de mantenimiento</p>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-2">
-								<span>
-									<p>
-										14
-									</p>
-									<p>
-										SEP
-									</p>
-								</span>
-							</div>
-							<div class="col-xs-8">
-								<p>12 hrs.</p>
-								<p>Sachaca, Jacobo Hunter</p>
-								<p>Por trabajos de mantenimiento</p>
-							</div>
-						</div>
+					</div> -->
+					<div class="box-body">
+						<ul>
+							<li class="box-item">
+								<a href="">
+									<div class="box-date">
+										<div class="box-date_day">14</div>
+										<div class="box-date_month">SEPT</div>
+									</div>
+									<div class="box-description">
+										<p>12 hrs.</p>
+										<p>Sachaca, Jacobo Hunter <br> Por trabajos de mantenimiento</p>
+									</div>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div class="row">
-						<button class="btn btn-info pull-right">
+					<div class="col-md-12">
+						<button class="btn btn-info btn-sm pull-right">
 							Ver todos
 						</button>
 					</div>
 				</div>
 				<!-- Estamos a tu servicio -->
-				<div class="col-md-8">
-					<span><i class="fab fa-gratipay"></i>Estamos a tu servicio</span>
-					<div class="">
+				<div class="col-md-8 box box-primary">
+					<div class="box-header"><i class="fab fa-gratipay with-margin-right"></i> Estamos a tu servicio </div>
+					<div class="box-body">
 						<div class="row">
 							<div class="col-xs-3">
 								<i class="fas fa-house-damage"></i>
@@ -235,12 +287,13 @@
 								<div>Lugares de Pago</div>
 							</div>
 						</div>
-						<div class="row">
-							<button class="btn btn-primary pull-right">
-								Ver más
-							</button>
-						</div>
 					</div>
+					<div class="col-md-12">
+						<button class="btn btn-primary btn-sm pull-right">
+							Ver más
+						</button>
+					</div>
+
 
 
 				</div>
@@ -248,7 +301,7 @@
 		</div>
 	</section>
 	<!-- Noticias, proyectos y videos -->
-	<section>
+	<section class="section">
 		<div class="container">
 			<!-- Navigator -->
 			<ul class="nav nav-tabs">
@@ -266,7 +319,7 @@
 						</div>
 						<div class="col-md-9">
 							<p>Corte de luz en setiembre.</p>
-							<p><span>Set 30, 2018</span> | <span>Autor</span></p>
+							<p><span>Set 30, 2018</span> | <strong class="text-primary">Autor</strong></p>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -283,7 +336,7 @@
 						</div>
 						<div class="col-md-9">
 							<p>Las lluvias causan cortes de luz.</p>
-							<p><span>Set 30, 2018</span> | <span>Autor</span></p>
+							<p><span>Set 30, 2018</span> | <strong class="text-primary">Autor</strong></p>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -294,8 +347,8 @@
 							<a href="">Seguir Leyendo</a>
 						</div>
 					</div>
-					<div class="row">
-						<button class="btn btn-primary pull-right">Ver todo</button>
+					<div class="col-md-12">
+						<button class="btn btn-primary btn-sm pull-right">Ver todo</button>
 					</div>
 				</div>
 				<!-- Projects -->
@@ -306,7 +359,7 @@
 						</div>
 						<div class="col-md-9">
 							<p>Corte de luz en setiembre.</p>
-							<p><span>Set 30, 2018</span> | <span>Autor</span></p>
+							<p><span>Set 30, 2018</span> | <strong class="text-primary">Autor</strong></p>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -323,7 +376,7 @@
 						</div>
 						<div class="col-md-9">
 							<p>Las lluvias causan cortes de luz.</p>
-							<p><span>Set 30, 2018</span> | <span>Autor</span></p>
+							<p><span>Set 30, 2018</span> | <strong class="text-primary">Autor</strong></p>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -334,8 +387,9 @@
 							<a href="">Seguir Leyendo</a>
 						</div>
 					</div>
-					<div class="row">
-						<button class="btn btn-primary pull-right">Ver todo</button>
+					<div class="col-md-12">
+
+						<button class="btn btn-primary btn-sm pull-right">Ver todo</button>
 					</div>
 				</div>
 				<!-- Videos -->
@@ -346,7 +400,7 @@
 						</div>
 						<div class="col-md-9">
 							<p>Corte de luz en setiembre.</p>
-							<p><span>Set 30, 2018</span> | <span>Autor</span></p>
+							<p><span>Set 30, 2018</span> | <strong class="text-primary">Autor</strong></p>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -363,7 +417,7 @@
 						</div>
 						<div class="col-md-9">
 							<p>Las lluvias causan cortes de luz.</p>
-							<p><span>Set 30, 2018</span> | <span>Autor</span></p>
+							<p><span>Set 30, 2018</span> | <strong class="text-primary">Autor</strong></p>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -374,15 +428,15 @@
 							<a href="">Seguir Leyendo</a>
 						</div>
 					</div>
-					<div class="row">
-						<button class="btn btn-primary pull-right">Ver todo</button>
+					<div class="col-md-12">
+						<button class="btn btn-primary btn-sm pull-right">Ver todo</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- Certificaciones -->
-	<section>
+	<section class="bg-dark section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
@@ -401,26 +455,26 @@
 		</div>
 	</section>
 	<!-- Otras instituciones -->
-	<section>
+	<section class="section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2">
-						<img src="./assets/img/logo_portalTransparencia.png" alt="Portal de Transparencia" class="img-responsive">
+					<img src="./assets/img/logo_portalTransparencia.png" alt="Portal de Transparencia" class="img-responsive">
 				</div>
 				<div class="col-md-2">
-						<img src="./assets/img/logo_osinerming.png" alt="Portal de Transparencia" class="img-responsive">
+					<img src="./assets/img/logo_osinerming.png" alt="Portal de Transparencia" class="img-responsive">
 				</div>
 				<div class="col-md-2">
-						<img src="./assets/img/logo_conectamef.png" alt="Portal de Transparencia" class="img-responsive">
+					<img src="./assets/img/logo_conectamef.png" alt="Portal de Transparencia" class="img-responsive">
 				</div>
 				<div class="col-md-2">
-						<img src="./assets/img/logo_estado-peruano.png" alt="Portal de Transparencia" class="img-responsive">
+					<img src="./assets/img/logo_estado-peruano.png" alt="Portal de Transparencia" class="img-responsive">
 				</div>
 				<div class="col-md-2">
-						<img src="./assets/img/logo_seal.jpg" alt="Portal de Transparencia" class="img-responsive">
+					<img src="./assets/img/logo_seal.jpg" alt="Portal de Transparencia" class="img-responsive">
 				</div>
 				<div class="col-md-2">
-						<img src="./assets/img/logo_fonafe.png" alt="Portal de Transparencia" class="img-responsive">
+					<img src="./assets/img/logo_fonafe.png" alt="Portal de Transparencia" class="img-responsive">
 				</div>
 			</div>
 		</div>
@@ -436,17 +490,3 @@
 </body>
 
 </html>
-<style>
-	input[type="text"] {
-		color: #666;
-		border-top-left-radius: 2px;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-		border-bottom-left-radius: 2px;
-		box-shadow: none;
-		background-color: #374850;
-		border: 1px solid transparent;
-		/* height: 35px; */
-	}
-
-</style>
