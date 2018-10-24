@@ -6654,11 +6654,6 @@ button.close {
   font-size: 18px;
   font-weight: 700;
 }
-.customfont {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-}
 @-ms-viewport {
   width: device-width;
 }
