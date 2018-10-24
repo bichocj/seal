@@ -7,7 +7,15 @@
   color: #d0f0ed !important;
   background-color: #207f75;
 }
+.bg-primary .text-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
 .bg-primary a {
+  margin-top: 10px;
+  font-size: 14px;
   color: #d0f0ed;
   text-decoration: none !important;
 }
