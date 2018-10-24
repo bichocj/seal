@@ -1538,6 +1538,9 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+.text_with_icon {
+  margin-left: 10px;
+}
 code,
 kbd,
 pre,
@@ -6999,10 +7002,6 @@ button.close {
   font-size: 13px;
   font-weight: 700;
   color: #5a5c64;
-}
-.custom-header .header-item i {
-  margin-right: -webkit-calc(10px / 2);
-  margin-right:         calc(10px / 2);
 }
 .custom-header .active {
   background-color: #ed7e36;
