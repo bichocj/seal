@@ -24,6 +24,7 @@
 @brand-primary-darken: #00423c;
 
 
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -365,8 +366,8 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    50px;
-@navbar-margin-bottom:             0px;
+@navbar-height:                    0px;
+@navbar-margin-bottom:             5px;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 4));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 4);
@@ -377,7 +378,7 @@
 @navbar-default-border:            transparent;
 
 // Navbar links
-@navbar-default-link-color:                @brand-primary;
+@navbar-default-link-color:                #008477;
 @navbar-default-link-hover-color:         @brand-primary-darken;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         @brand-info;
@@ -899,15 +900,10 @@
 @header-font-weight: 500;
 @header-font-color: @text-gray;
 
-*{
-  outline: solid 1px red;
-}
-
 //== Search
 @icon-margin-top: calc(30px/2 - @icon-size/2);
 @icon-margin-right: 25px;
 @icon-size: 11px;
-
 
 //== Custom Fonts
 @font-size-title: 18px;
@@ -932,3 +928,12 @@
 @social-size: 15px;
 @social-space: 18px;
 @social-height: 30px;
+
+//== Socials Controls
+@navbar-brand-space: 30px;
+@navbar-brand-height: 70px;
+
+
+// *{
+//     outline: solid 1px red;
+//   }
