@@ -5,7 +5,7 @@
  */
 .bg-primary {
   color: #d0f0ed !important;
-  background-color: #207f75;
+  background-color: #008477;
 }
 .bg-primary .text-title {
   padding-bottom: 10px;
@@ -7082,16 +7082,29 @@ button.close {
 .box .box-container:hover {
   background: #ef7d00;
 }
+.box .box-container:hover .box-hours {
+  color: #fff;
+}
+.box .box-container:hover .box-date {
+  color: #fff;
+  border-color: #fff;
+}
+.box .box-container:hover .box-container-description {
+  border-color: #ef7d00;
+}
+.box .box-container:hover .box-description {
+  color: #fff;
+}
 .box .box-container .box-hours {
   margin-bottom: 5px;
   font-size: 15px;
   font-weight: 700;
-  color: #424040;
+  color: #b3b3b3;
 }
 .box .box-container .box-date {
   position: absolute;
-  left: -webkit-calc(122px/2 - 35px/2);
-  left:         calc(122px/2 - 35px/2);
+  left: -webkit-calc(50% - 35px/2);
+  left:         calc(50% - 35px/2);
   width: 35px;
   height: 40px;
   color: #ef7d00;
@@ -7107,14 +7120,11 @@ button.close {
   font-weight: 500;
   text-transform: uppercase;
 }
-.box .box-container .box-date:hover {
-  color: #fff;
-}
 .box .box-container .box-container-description {
   padding-right: 0;
   padding-bottom: 16px;
   padding-left: 0;
-  border-bottom: 1px solid #424040;
+  border-bottom: 1px solid #b3b3b3;
 }
 .box .box-container .box-description {
   font-size: 15px;
@@ -7310,11 +7320,13 @@ button.close {
   src: url('../../assets/fonts/RobotoCondensed-LightItalic.ttf') format('truetype');
 }
 footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: -webkit-calc(10px + 3.5);
+  padding-top:         calc(10px + 3.5);
+  padding-bottom: -webkit-calc(10px + 3.5);
+  padding-bottom:         calc(10px + 3.5);
   font-size: 14px;
   line-height: 1.15;
-  color: #d0f0ed;
+  color: #a0e0da;
   background-color: #006a5f;
 }
 .carousel-control img {
