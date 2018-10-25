@@ -4036,7 +4036,8 @@ input[type="search"] {
 }
 .search span {
   position: absolute;
-  top: 8px;
+  top: -webkit-calc(30px/2 - 11px/2);
+  top:         calc(30px/2 - 11px/2);
   right: 25px;
   font-size: 11px;
   color: #207f75;
@@ -7035,6 +7036,7 @@ button.close {
 }
 .social-icons {
   height: 30px;
+  padding-left: 5px;
 }
 .social-icons a {
   color: #58595b;
@@ -7043,7 +7045,7 @@ button.close {
 .social-icons i {
   margin-top: -webkit-calc(30px/2 - 15px/2);
   margin-top:         calc(30px/2 - 15px/2);
-  margin-right: 12px;
+  margin-right: 18px;
   font-size: 15px;
 }
 .social-icons a:last-child i {

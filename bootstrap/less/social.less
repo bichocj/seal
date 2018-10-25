@@ -1,12 +1,13 @@
 .social-icons {
-  height: 30px;
+  height: @social-height;
+  padding-left: 5px;
   a {
     color: @header-font-color;
     text-decoration: none;
   }
   i {
     font-size: @social-size;
-    margin-top: calc(30px/2 - @social-size/2);
+    margin-top: calc(@social-height/2 - @social-size/2);
     margin-right: @social-space;    
   }
   a:last-child {
