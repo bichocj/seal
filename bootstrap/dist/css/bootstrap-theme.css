@@ -4,7 +4,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 .bg-primary {
+  color: #d0f0ed !important;
   background-color: #207f75;
+}
+.bg-primary a {
+  color: #d0f0ed !important;
+  text-decoration: none;
 }
 .btn-default,
 .btn-primary,
