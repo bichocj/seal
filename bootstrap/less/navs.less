@@ -99,9 +99,14 @@
       line-height: @line-height-base;
       border: 1px solid transparent;
       border-radius: @border-radius-base @border-radius-base 0 0;
-      color: #333;
+      color: @nav-tabs-color;
+      font-size: @font-size-box-title;
+      text-align: center;
+      min-width: @nav-tabs-size;
       &:hover {
-        border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
+        color: @brand-info;
+        background-color: transparent;
+      
       }
     }
 
