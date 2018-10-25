@@ -3,12 +3,15 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+* {
+  outline: solid 1px red;
+}
 .bg-primary {
   color: #d0f0ed !important;
   background-color: #207f75;
 }
 .bg-primary .text-title {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
