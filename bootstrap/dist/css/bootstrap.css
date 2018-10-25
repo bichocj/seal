@@ -7190,4 +7190,15 @@ footer {
   color: #d0f0ed;
   background-color: #006a5f;
 }
+.carousel-control img {
+  position: absolute;
+  top: -webkit-calc(338px/2 - 35px/2);
+  top:         calc(338px/2 - 35px/2);
+}
+.carousel-control.left img {
+  left: 20px;
+}
+.carousel-control.right img {
+  right: 20px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
