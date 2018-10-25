@@ -12,7 +12,11 @@
   background-color: @brand-primary;
   color: @text-color-primary !important;
   a {
-    color: @text-color-primary !important;
-    text-decoration: none;
+    color: @text-color-primary;
+    text-decoration: none !important;
+    &:hover {
+      color: @text-white;
+      cursor: pointer;
+    }
   }
 }
