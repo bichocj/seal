@@ -6982,25 +6982,79 @@ button.close {
   color: #fff;
 }
 .box .box-body .box-pill {
-  height: 140px;
+  height: -webkit-calc(300px / 2);
+  height:         calc(300px / 2);
+  max-height: -webkit-calc(300px / 2);
+  max-height:         calc(300px / 2);
   text-align: center;
 }
 .box .box-body .box-pill .box-pill-content {
-  padding-top: -webkit-calc(140px / 2 - 58px / 2);
-  padding-top:         calc(140px / 2 - 58px / 2);
+  padding-top: -webkit-calc(calc(300px / 2) / 2 - 64px / 2);
+  padding-top:         calc(calc(300px / 2) / 2 - 64px / 2);
+  font-size: 15px;
+  color: #424040;
 }
-.box .box-body .box-pill .box-pill-content i {
-  margin-bottom: 10px;
-  font-size: 30px;
-  color: #207f75;
+.box .box-body .box-pill .box-pill-content .box-pill-image {
+  height: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+.box .box-body .box-pill .box-pill-content .box-pill-image.places {
+  background-image: url('../../../assets/img/atencion_lugares_de_pago.png');
+}
+.box .box-body .box-pill .box-pill-content .box-pill-image.payments {
+  background-image: url('../../../assets/img/atencion_pagar.png');
+}
+.box .box-body .box-pill .box-pill-content .box-pill-image.formalities {
+  background-image: url('../../../assets/img/atencion_tramites.png');
+}
+.box .box-body .box-pill .box-pill-content .box-pill-image.voucher {
+  background-image: url('../../../assets/img/atencion_comprobante.png');
+}
+.box .box-body .box-pill .box-pill-content .box-pill-image.fonoseal {
+  background-image: url('../../../assets/img/atencion_fonoseal.png');
+}
+.box .box-body .box-pill .box-pill-content .box-pill-image.chat {
+  background-image: url('../../../assets/img/atencion_chat.png');
+}
+.box .box-body .box-pill .box-pill-content .box-pill-image.nagging {
+  background-image: url('../../../assets/img/atencion_quejas.png');
+}
+.box .box-body .box-pill .box-pill-content .box-pill-image.format {
+  background-image: url('../../../assets/img/atencion_formatos.png');
 }
 .box .box-body .box-pill:hover {
-  color: #fff;
   cursor: pointer;
-  background: #207f75;
+  background-color: #207f75;
 }
-.box .box-body .box-pill:hover i {
+.box .box-body .box-pill:hover .box-pill-content {
   color: #fff;
+}
+.box .box-body .box-pill:hover .box-pill-content .box-pill-image.places {
+  background-image: url('../../../assets/img/atencion_lugares_de_pago-blanco.png');
+}
+.box .box-body .box-pill:hover .box-pill-content .box-pill-image.payments {
+  background-image: url('../../../assets/img/atencion_pagar-blanco.png');
+}
+.box .box-body .box-pill:hover .box-pill-content .box-pill-image.formalities {
+  background-image: url('../../../assets/img/atencion_tramites-blanco.png');
+}
+.box .box-body .box-pill:hover .box-pill-content .box-pill-image.voucher {
+  background-image: url('../../../assets/img/atencion_comprobante-blanco.png');
+}
+.box .box-body .box-pill:hover .box-pill-content .box-pill-image.fonoseal {
+  background-image: url('../../../assets/img/atencion_fonoseal-blanco.png');
+}
+.box .box-body .box-pill:hover .box-pill-content .box-pill-image.chat {
+  background-image: url('../../../assets/img/atencion_chat-blanco.png');
+}
+.box .box-body .box-pill:hover .box-pill-content .box-pill-image.nagging {
+  background-image: url('../../../assets/img/atencion_quejas-blanco.png');
+}
+.box .box-body .box-pill:hover .box-pill-content .box-pill-image.format {
+  background-image: url('../../../assets/img/atencion_formatos-blanco.png');
 }
 .box-primary .box-header {
   color: #207f75;

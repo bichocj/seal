@@ -11,27 +11,33 @@
     font-weight: @box-header-font_weight;
     font-size: @box-header-font_size;
   }
+
   .box-body {
     position: relative;
     border-radius: @border-radius-small;
     background: @box-body-bg;
     border-top: @border-radius-small solid @box-default-color;
     margin-bottom: calc(@margin-size * 2);
+
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
+
       .box-item {
         color: @text-color  !important;
         padding: 5px 20px 0px 20px;
+
         &:last-child {
           .box-description {
             border: none;
           }
         }
+
         .box-date-container {
           display: table-cell;
           text-align: center;
+
           .box-date {
             text-transform: uppercase;
             font-size: 12px;
@@ -41,40 +47,47 @@
             padding: 7px;
             margin: 17px 20px auto auto;
           }
+
           .box-date_day {
             font-weight: @box-header-font_weight;
             font-size: 20px;
           }
+
           .box-date_month {
             font-weight: lighter;
             font-size: 10px;
           }
         }
+
         .box-description {
           display: table-cell;
           vertical-align: top;
           width: 100%;
           padding: 15px 0px;
           border-bottom: 1px solid @border-color;
+
           .box-hours {
             font-weight: 700;
             color: #888;
             font-size: 12px;
             margin-bottom: 5px;
-          }          
+          }
         }
-        
+
         &:hover {
           background-color: @brand-info;
           cursor: pointer;
           color: @text-white;
+
           .box-date {
             color: @text-white;
             border-color: @text-white;
           }
+
           .box-description {
             border-bottom: none;
             color: @text-white;
+
             .box-hours {
               color: @text-white;
             }
@@ -82,24 +95,81 @@
         }
       }
     }
+
     .box-pill {
-      height: 140px;
+      height: calc(@box-height / 2);
+      max-height: calc(@box-height / 2);
       text-align: center;
+
       .box-pill-content {
-        padding-top: calc(140px / 2 - 58px / 2);
-        i {
-          font-size: 30px;
-          margin-bottom: @margin-size;
-          color: @brand-primary;
+        padding-top: calc(calc(@box-height / 2) / 2 - 64px / 2);
+        color: @box-color;
+        font-size: @font-size-box-subtitle;
+        .box-pill-image {
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 64px;
+          background-position: center;
+          &.places {
+            background-image: url('./../../../assets/img/atencion_lugares_de_pago.png');            
+          }
+          &.payments {
+            background-image: url('./../../../assets/img/atencion_pagar.png');            
+          }
+          &.formalities {
+            background-image: url('./../../../assets/img/atencion_tramites.png');            
+          }
+          &.voucher {
+            background-image: url('./../../../assets/img/atencion_comprobante.png');            
+          }
+          &.fonoseal {
+            background-image: url('./../../../assets/img/atencion_fonoseal.png');            
+          }
+          &.chat {
+            background-image: url('./../../../assets/img/atencion_chat.png');            
+          }
+          &.nagging {
+            background-image: url('./../../../assets/img/atencion_quejas.png');            
+          }
+          &.format {
+            background-image: url('./../../../assets/img/atencion_formatos.png');            
+          }
         }
       }
+
       &:hover {
         cursor: pointer;
-        background: @brand-primary;
-        color: @text-white;
-        i {
+        background-color: @brand-primary;
+        .box-pill-content {
           color: @text-white;
+          .box-pill-image {
+            &.places {
+              background-image: url('./../../../assets/img/atencion_lugares_de_pago-blanco.png');
+            }
+            &.payments {
+              background-image: url('./../../../assets/img/atencion_pagar-blanco.png');            
+            }
+            &.formalities {
+              background-image: url('./../../../assets/img/atencion_tramites-blanco.png');            
+            }
+            &.voucher {
+              background-image: url('./../../../assets/img/atencion_comprobante-blanco.png');            
+            }
+            &.fonoseal {
+              background-image: url('./../../../assets/img/atencion_fonoseal-blanco.png');            
+            }
+            &.chat {
+              background-image: url('./../../../assets/img/atencion_chat-blanco.png');            
+            }
+            &.nagging {
+              background-image: url('./../../../assets/img/atencion_quejas-blanco.png');            
+            }
+            &.format {
+              background-image: url('./../../../assets/img/atencion_formatos-blanco.png');            
+            }
+          }
         }
+        
       }
     }
   }
@@ -110,12 +180,14 @@
 // --------------------------------------------------
 
 .box-primary {
-  .box-variant(@brand-primary; @brand-primary; @brand-primary);
+  .box-variant(@brand-primary;
+  @brand-primary;
+  @brand-primary);
 }
 
 // Info appears as blue-green
 .box-info {
-  .box-variant(@brand-info; @brand-info; @brand-info);
+  .box-variant(@brand-info;
+  @brand-info;
+  @brand-info);
 }
-
-
