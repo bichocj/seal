@@ -8,8 +8,12 @@
   background-color: #207f75;
 }
 .bg-primary a {
-  color: #d0f0ed !important;
-  text-decoration: none;
+  color: #d0f0ed;
+  text-decoration: none !important;
+}
+.bg-primary a:hover {
+  color: #fff;
+  cursor: pointer;
 }
 .btn-default,
 .btn-primary,
