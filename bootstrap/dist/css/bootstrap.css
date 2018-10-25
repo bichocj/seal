@@ -6502,9 +6502,9 @@ button.close {
   border-radius: 10px;
 }
 .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  margin: 0;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
   background-color: #fff;
 }
 .carousel-caption {
@@ -6546,7 +6546,7 @@ button.close {
     padding-bottom: 30px;
   }
   .carousel-indicators {
-    bottom: 20px;
+    bottom: -5px;
   }
 }
 .clearfix:before,
