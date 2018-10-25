@@ -3,9 +3,6 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-* {
-  outline: solid 1px red;
-}
 .bg-primary {
   color: #d0f0ed !important;
   background-color: #207f75;
@@ -7077,6 +7074,51 @@ button.close {
 }
 .box .box-body .box-pill:hover .box-pill-content .box-pill-image.format {
   background-image: url('../../../assets/img/atencion_formatos-blanco.png');
+}
+.box .box-container {
+  display: block;
+  padding-top: 16px;
+}
+.box .box-container:hover {
+  background: #ef7d00;
+}
+.box .box-container .box-hours {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #424040;
+}
+.box .box-container .box-date {
+  position: absolute;
+  left: -webkit-calc(122px/2 - 35px/2);
+  left:         calc(122px/2 - 35px/2);
+  width: 35px;
+  height: 40px;
+  color: #ef7d00;
+  text-align: center;
+  border: solid 1px #ef7d00;
+}
+.box .box-container .box-date .box-date-day {
+  font-size: 16px;
+  font-weight: 700;
+}
+.box .box-container .box-date .box-date-month {
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.box .box-container .box-date:hover {
+  color: #fff;
+}
+.box .box-container .box-container-description {
+  padding-right: 0;
+  padding-bottom: 16px;
+  padding-left: 0;
+  border-bottom: 1px solid #424040;
+}
+.box .box-container .box-description {
+  font-size: 15px;
+  color: #424040;
 }
 .box-primary .box-header {
   color: #207f75;

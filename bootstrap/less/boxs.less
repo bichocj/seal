@@ -173,6 +173,55 @@
       }
     }
   }
+
+  .box-container {
+    display: block;
+    padding-top: 16px;
+    &:hover {
+      background: @brand-info;    
+    }
+      
+    .box-hours {
+      font-weight: 700;
+      color: @box-color;
+      font-size: @font-size-box-subtitle;
+      margin-bottom: 5px;
+    }
+    .box-date {
+      position: absolute;
+      width: 35px;
+      height: 40px;
+       border: solid 1px @brand-info;
+      color: @brand-info;
+      text-align: center;
+      left: calc(122px/2 - 35px/2);
+      .box-date-day {
+        font-size: @font-size-box-day;
+        font-weight: 700;
+      }
+      .box-date-month {
+        font-size: @font-size-box-month;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      &:hover {
+        color: @text-white;
+      }
+    }
+    .box-container-description {
+      padding-left: 0px;
+      padding-right: 0px;
+      border-bottom: 1px solid @box-color;
+      padding-bottom: 16px;
+    }
+    .box-description {
+      font-size: @font-size-box-subtitle;
+      color: @box-color;
+    }
+  }
+
+  
+
 }
 
 
