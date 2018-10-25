@@ -3,6 +3,9 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+* {
+  outline: solid 1px red;
+}
 .bg-primary {
   color: #d0f0ed !important;
   background-color: #207f75;
@@ -4045,7 +4048,7 @@ input[type="search"] {
 .search .form-group {
   margin: 0;
 }
-header li:last-child a {
+.custom-nav li:last-child a {
   padding-right: 0;
 }
 .nav {
@@ -4060,7 +4063,7 @@ header li:last-child a {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 30px;
+  padding: 10px 15px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
