@@ -131,12 +131,27 @@
     }
   }
   .news-date {  
-    font-size: 12px;
-    color: #888;
+    font-size: @font-size-description;
+    color: @box-date-color;
   }
   .news-title {
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: @font-size-header-links;
+    color: @box-color;
+    &:hover{
+      color: @navbar-default-link-color;
+    }
+  }
+  .news-description {
+    color: @box-color;
+    font-size: @font-size-description;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .news-image {
+    height: @news-image;
   }
 }
 
