@@ -11,11 +11,10 @@
         padding: @header-padding-vertical @header-padding-horizontal;
         color: @header-font-color;
         text-decoration: none;
-      }
-
-      &:hover {
-        cursor: pointer;
-        .active;
+        &:hover, &:focus {
+          cursor: pointer;
+          color: @brand-info;
+        }
       }
     }
   }
@@ -29,7 +28,7 @@
     padding-bottom: @header-padding-vertical;
   }
 
-  .active {
+  .highlight {
     background-color: @brand-info;
     a {
       color: @text-white !important;

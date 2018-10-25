@@ -3,9 +3,6 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-* {
-  outline: solid 1px red;
-}
 .bg-primary {
   color: #d0f0ed !important;
   background-color: #207f75;
@@ -218,24 +215,24 @@ fieldset[disabled] .btn-success.active {
   background-image: none;
 }
 .btn-info {
-  background-image: -webkit-linear-gradient(top, #ed7e36 0%, #d35e13 100%);
-  background-image:      -o-linear-gradient(top, #ed7e36 0%, #d35e13 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ed7e36), to(#d35e13));
-  background-image:         linear-gradient(to bottom, #ed7e36 0%, #d35e13 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffed7e36', endColorstr='#ffd35e13', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #ef7d00 0%, #b25d00 100%);
+  background-image:      -o-linear-gradient(top, #ef7d00 0%, #b25d00 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ef7d00), to(#b25d00));
+  background-image:         linear-gradient(to bottom, #ef7d00 0%, #b25d00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffef7d00', endColorstr='#ffb25d00', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #ca5a12;
+  border-color: #a85800;
 }
 .btn-info:hover,
 .btn-info:focus {
-  background-color: #d35e13;
+  background-color: #b25d00;
   background-position: 0 -15px;
 }
 .btn-info:active,
 .btn-info.active {
-  background-color: #d35e13;
-  border-color: #ca5a12;
+  background-color: #b25d00;
+  border-color: #a85800;
 }
 .btn-info.disabled,
 .btn-info[disabled],
@@ -255,7 +252,7 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #d35e13;
+  background-color: #b25d00;
   background-image: none;
 }
 .btn-warning {
@@ -502,11 +499,11 @@ fieldset[disabled] .btn-danger.active {
   background-repeat: repeat-x;
 }
 .progress-bar-info {
-  background-image: -webkit-linear-gradient(top, #ed7e36 0%, #dc6314 100%);
-  background-image:      -o-linear-gradient(top, #ed7e36 0%, #dc6314 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ed7e36), to(#dc6314));
-  background-image:         linear-gradient(to bottom, #ed7e36 0%, #dc6314 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffed7e36', endColorstr='#ffdc6314', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #ef7d00 0%, #bc6200 100%);
+  background-image:      -o-linear-gradient(top, #ef7d00 0%, #bc6200 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ef7d00), to(#bc6200));
+  background-image:         linear-gradient(to bottom, #ef7d00 0%, #bc6200 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffef7d00', endColorstr='#ffbc6200', GradientType=0);
   background-repeat: repeat-x;
 }
 .progress-bar-warning {
