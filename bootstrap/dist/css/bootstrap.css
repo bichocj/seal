@@ -7182,4 +7182,12 @@ button.close {
 
   src: url('../../assets/fonts/RobotoCondensed-LightItalic.ttf') format('truetype');
 }
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #d0f0ed;
+  background-color: #006a5f;
+}
 /*# sourceMappingURL=bootstrap.css.map */
