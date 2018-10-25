@@ -22,9 +22,17 @@
   color: #d0f0ed;
   text-decoration: none !important;
 }
-.bg-primary a:hover {
+.bg-primary a:hover,
+.bg-primary a:focus {
   color: #fff;
   cursor: pointer;
+}
+.bg-primary .directions {
+  font-size: 12px;
+}
+.bg-primary .directions .direction {
+  margin-top: -webkit-calc(10px + 5px);
+  margin-top:         calc(10px + 5px);
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {

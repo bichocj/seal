@@ -8,6 +8,8 @@
   }
 }
 
+
+// Custom Background
 .bg-primary {
   background-color: @brand-primary;
   color: @text-color-primary !important;
@@ -25,6 +27,12 @@
     &:hover, &:focus {
       color: @text-white;
       cursor: pointer;
+    }
+  }
+  .directions {
+    font-size: @font-size-footer-directions;
+    .direction {
+      margin-top: calc(@margin-size + 5px); 
     }
   }
 }
