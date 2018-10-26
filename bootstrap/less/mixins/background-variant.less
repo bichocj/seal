@@ -23,7 +23,7 @@
     color: @text-color-primary;
     text-decoration: none !important;
     font-size: @font-size-footer;
-    margin-top: @margin-size;
+    margin-top: calc(@margin-size + 5px);
     &:hover, &:focus {
       color: @text-white;
       cursor: pointer;
@@ -32,7 +32,7 @@
   .directions {
     font-size: @font-size-footer-directions;
     .direction {
-      margin-top: calc(@margin-size + 5px); 
+      margin-top: calc(@margin-size + 7px); 
     }
   }
 }

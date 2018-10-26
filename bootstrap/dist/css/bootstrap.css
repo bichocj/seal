@@ -14,7 +14,8 @@
   color: #fff;
 }
 .bg-primary a {
-  margin-top: 10px;
+  margin-top: -webkit-calc(10px + 5px);
+  margin-top:         calc(10px + 5px);
   font-size: 14px;
   color: #d0f0ed;
   text-decoration: none !important;
@@ -28,8 +29,8 @@
   font-size: 12px;
 }
 .bg-primary .directions .direction {
-  margin-top: -webkit-calc(10px + 5px);
-  margin-top:         calc(10px + 5px);
+  margin-top: -webkit-calc(10px + 7px);
+  margin-top:         calc(10px + 7px);
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -7320,10 +7321,10 @@ button.close {
   src: url('../../assets/fonts/RobotoCondensed-LightItalic.ttf') format('truetype');
 }
 footer {
-  padding-top: -webkit-calc(10px + 3.5);
-  padding-top:         calc(10px + 3.5);
-  padding-bottom: -webkit-calc(10px + 3.5);
-  padding-bottom:         calc(10px + 3.5);
+  padding-top: -webkit-calc(10px + 3.5px);
+  padding-top:         calc(10px + 3.5px);
+  padding-bottom: -webkit-calc(10px + 3.5px);
+  padding-bottom:         calc(10px + 3.5px);
   font-size: 14px;
   line-height: 1.15;
   color: #a0e0da;
