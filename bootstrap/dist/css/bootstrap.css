@@ -4380,6 +4380,12 @@ input[type="search"] {
   margin-top: -webkit-calc(-70px/2);
   margin-top:         calc(-70px/2);
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand {
+    margin-right: -webkit-calc(30px / 2) !important;
+    margin-right:         calc(30px / 2) !important;
+  }
+}
 .navbar-toggle {
   position: relative;
   float: right;
