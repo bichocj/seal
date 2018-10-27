@@ -6764,6 +6764,14 @@ button.close {
   padding-right: -webkit-calc(10px * 5);
   padding-right:         calc(10px * 5);
 }
+.logos img {
+  height: 65px;
+  max-height: 65px;
+  margin: 0 auto;
+}
+.certification-container {
+  padding: 10px;
+}
 @-ms-viewport {
   width: device-width;
 }
