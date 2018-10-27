@@ -3,9 +3,6 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-* {
-  outline: solid 1px red;
-}
 .bg-primary {
   color: #d0f0ed !important;
   background-color: #008477;
@@ -6722,6 +6719,14 @@ button.close {
 .news-item .news-content {
   padding-left: 25px;
 }
+.button-container {
+  margin-top: -webkit-calc(10px * 2);
+  margin-top:         calc(10px * 2);
+}
+.custom-tab {
+  padding-right: -webkit-calc(10px * 5);
+  padding-right:         calc(10px * 5);
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -7084,6 +7089,7 @@ button.close {
 .box .box-container {
   display: block;
   padding-top: 16px;
+  padding-left: 0;
 }
 .box .box-container:hover {
   background: #ef7d00;
@@ -7370,9 +7376,25 @@ footer {
 .sealito {
   height: 451px;
   margin-top: 40px;
-  background-image: url('../../../assets/img/img_sealito.png');
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-transition: .5s ease;
+  -webkit-transition: height .3s ease, opacity .3s;
+       -o-transition: .5s ease;
+       -o-transition: height .3s ease, opacity .3s;
+          transition: .5s ease;
+          transition: height .3s ease, opacity .3s;
+}
+.sealito img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  max-width: initial;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .sealito:hover {
   -webkit-box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, .25);
