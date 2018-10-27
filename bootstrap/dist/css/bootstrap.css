@@ -7376,12 +7376,9 @@ footer {
 .sealito {
   height: 451px;
   margin-top: 40px;
-  -webkit-transition: .5s ease;
-  -webkit-transition: height .3s ease, opacity .3s;
-       -o-transition: .5s ease;
-       -o-transition: height .3s ease, opacity .3s;
-          transition: .5s ease;
-          transition: height .3s ease, opacity .3s;
+  -webkit-transition: height .3s ease, -webkit-box-shadow .3s ease;
+       -o-transition: height .3s ease, box-shadow .3s ease;
+          transition: height .3s ease, box-shadow .3s ease;
 }
 .sealito img {
   position: absolute;
@@ -7397,6 +7394,8 @@ footer {
           transform: translate(-50%, -50%);
 }
 .sealito:hover {
+  height: -webkit-calc(451px + 3px);
+  height:         calc(451px + 3px);
   -webkit-box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, .25);
           box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, .25);
 }
