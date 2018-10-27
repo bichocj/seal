@@ -6341,9 +6341,23 @@ button.close {
 .carousel-inner > .item {
   position: relative;
   display: none;
+  height: 385px;
   -webkit-transition: .6s ease-in-out left;
        -o-transition: .6s ease-in-out left;
           transition: .6s ease-in-out left;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  max-width: initial;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -6713,8 +6727,22 @@ button.close {
   -webkit-box-orient: vertical;
 }
 .news-item .news-image {
-  width: 100%;
   height: 145px;
+}
+.news-item .news-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  max-width: initial;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .news-item .news-content {
   padding-left: 25px;
@@ -7017,12 +7045,18 @@ button.close {
   max-height: -webkit-calc(300px / 2);
   max-height:         calc(300px / 2);
   text-align: center;
+  -webkit-transition: .5s ease;
+       -o-transition: .5s ease;
+          transition: .5s ease;
 }
 .box .box-body .box-pill .box-pill-content {
-  padding-top: -webkit-calc(calc(300px / 2) / 2 - 64px / 2);
-  padding-top:         calc(calc(300px / 2) / 2 - 64px / 2);
+  padding-top: -webkit-calc(calc(300px / 2) / 2 - 94px / 2);
+  padding-top:         calc(calc(300px / 2) / 2 - 94px / 2);
   font-size: 15px;
   color: #424040;
+  -webkit-transition: .5s ease;
+       -o-transition: .5s ease;
+          transition: .5s ease;
 }
 .box .box-body .box-pill .box-pill-content .box-pill-image {
   height: 64px;
@@ -7030,6 +7064,9 @@ button.close {
   background-position: center;
   -webkit-background-size: contain;
           background-size: contain;
+  -webkit-transition: .5s ease;
+       -o-transition: .5s ease;
+          transition: .5s ease;
 }
 .box .box-body .box-pill .box-pill-content .box-pill-image.places {
   background-image: url('../../../assets/img/atencion_lugares_de_pago.png');

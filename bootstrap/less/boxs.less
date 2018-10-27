@@ -100,16 +100,18 @@
       height: calc(@box-height / 2);
       max-height: calc(@box-height / 2);
       text-align: center;
-
+      transition: @box-pill-transition;
       .box-pill-content {
-        padding-top: calc(calc(@box-height / 2) / 2 - 64px / 2);
+        padding-top: calc(calc(@box-height / 2) / 2 - @box-image-height / 2);
         color: @box-color;
         font-size: @font-size-box-subtitle;
+        transition: @box-pill-transition;
         .box-pill-image {
           background-repeat: no-repeat;
           background-size: contain;
           height: 64px;
           background-position: center;
+          transition: @box-pill-transition;
           &.places {
             background-image: url('./../../../assets/img/atencion_lugares_de_pago.png');            
           }

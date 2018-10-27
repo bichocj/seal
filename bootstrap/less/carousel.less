@@ -16,8 +16,19 @@
   > .item {
     display: none;
     position: relative;
+    height: @size-banner;
     .transition(.6s ease-in-out left);
-
+    > img {
+      height: 100%;
+      width: auto;
+      max-width: initial;
+      min-width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
     // Account for jankitude on images
     > img,
     > a > img {
