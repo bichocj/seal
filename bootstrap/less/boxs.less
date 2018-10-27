@@ -200,12 +200,16 @@
     }
     .box-date {
       position: absolute;
-      width: 35px;
-      height: 40px;
+      width: @box-date-width;
+      height: @box-date-height;
       border: solid 1px @brand-info;
       color: @brand-info;
       text-align: center;
-      left: calc(50% - 35px/2);
+      left: calc(50% - @box-date-width/2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       .box-date-day {
         font-size: @font-size-box-day;
         font-weight: 700;
@@ -222,14 +226,16 @@
       border-bottom: 1px solid @nav-tabs-color;
       padding-bottom: 16px;
     }
+    &:last-child {
+      .box-container-description {
+        border-bottom: 1px solid transparent;
+      }
+    }
     .box-description {
       font-size: @font-size-box-subtitle;
       color: @box-color;
     }
   }
-
-  
-
 }
 
 
