@@ -30,12 +30,25 @@
 
   .header-list-link {
     float: right;
+    @media (max-width: @screen-xs-max) { 
+      float: none;
+    }
   }
 
   .highlight {
     background-color: @brand-info;
     a {
       color: @text-white !important;
+    }
+    @media (max-width: @screen-xs-max) { 
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 15px; 
+      a {
+        padding-left: @margin-size !important;
+        padding-right: @margin-size !important; 
+      }
     }
   }
 

@@ -7260,11 +7260,28 @@ button.close {
 .custom-header .header-list-link {
   float: right;
 }
+@media (max-width: 767px) {
+  .custom-header .header-list-link {
+    float: none;
+  }
+}
 .custom-header .highlight {
   background-color: #ef7d00;
 }
 .custom-header .highlight a {
   color: #fff !important;
+}
+@media (max-width: 767px) {
+  .custom-header .highlight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+  }
+  .custom-header .highlight a {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
 }
 .social-icons {
   height: 30px;
