@@ -4,6 +4,9 @@
   a {
     color: @header-font-color;
     text-decoration: none;
+    &:hover {
+      color: @brand-primary;
+    }
   }
   i {
     font-size: @social-size;
@@ -15,4 +18,8 @@
       margin-right: 0px; 
     }
   }
+  @media (max-width: @screen-sm-max) {
+    display: flex;
+    justify-content: center;
+   }
 }
