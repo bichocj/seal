@@ -152,6 +152,9 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    @media (max-width: @screen-xs-max) { 
+      -webkit-line-clamp: 2;
+    }
   }
   .news-image {
     height: @news-image;
@@ -168,6 +171,9 @@
       padding-left: 15px;
       padding-right: 15px;
     }
+    @media (max-width: @screen-xs-max) { 
+      height: 19vw;
+    }
   }
   .news-content {
     padding-left: 25px;
@@ -180,6 +186,9 @@
 
 .custom-tab {
   padding-right: calc(@margin-size * 5);
+  @media (max-width: @screen-md-min) { 
+    padding-right: 15px;
+  }
 }
 
 .logos {
