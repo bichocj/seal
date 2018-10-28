@@ -7257,6 +7257,9 @@ button.close {
   font-weight: 500;
   color: #58595b;
 }
+.custom-header .header-list-link {
+  float: right;
+}
 .custom-header .highlight {
   background-color: #ef7d00;
 }
