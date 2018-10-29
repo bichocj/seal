@@ -25,6 +25,12 @@
   color: #fff;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .bg-primary a:last-child {
+    margin-bottom: -webkit-calc(10px + 5px);
+    margin-bottom:         calc(10px + 5px);
+  }
+}
 .bg-primary .directions {
   font-size: 12px;
 }

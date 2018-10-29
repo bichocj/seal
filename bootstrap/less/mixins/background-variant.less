@@ -28,6 +28,11 @@
       color: @text-white;
       cursor: pointer;
     }
+    @media (max-width: @screen-xs-max) {
+      &:last-child {
+        margin-bottom: calc(@margin-size + 5px);
+      }
+    }
   }
   .directions {
     font-size: @font-size-footer-directions;
