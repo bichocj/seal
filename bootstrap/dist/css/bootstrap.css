@@ -4041,11 +4041,37 @@ input[type="search"] {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.search-social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+          flex-direction: row;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.search-social .container-search {
+  position: relative;
+  width: 270px;
+  margin-right: 20px;
+}
+@media (max-width: 991px) {
+  .search-social .container-search {
+    width: 100%;
+  }
+}
 .search span {
   position: absolute;
   top: -webkit-calc(30px/2 - 11px/2);
   top:         calc(30px/2 - 11px/2);
-  right: 25px;
+  right: 15px;
   font-size: 11px;
   color: #207f75;
 }
@@ -4264,9 +4290,28 @@ input[type="search"] {
     border-radius: 4px;
   }
 }
+@media (max-width: 991px) {
+  .navbar {
+    margin-top: 30px;
+  }
+}
 @media (min-width: 768px) {
   .navbar-header {
     float: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    width: 100%;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .navbar-collapse {
@@ -4615,6 +4660,7 @@ input[type="search"] {
   color: #207f75;
 }
 .navbar-default .navbar-nav > li > a {
+  font-size: 14px;
   font-weight: 400;
   color: #008477;
 }
@@ -6364,6 +6410,16 @@ button.close {
        -o-transition: .6s ease-in-out left;
           transition: .6s ease-in-out left;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner > .item {
+    height: 305px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner > .item {
+    height: 235px;
+  }
+}
 .carousel-inner > .item > img {
   position: absolute;
   top: 50%;
@@ -6733,7 +6789,7 @@ button.close {
   color: #808080;
 }
 .news-item .news-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #424040;
 }
@@ -7331,7 +7387,7 @@ button.close {
 .social-icons i {
   margin-top: -webkit-calc(30px/2 - 15px/2);
   margin-top:         calc(30px/2 - 15px/2);
-  margin-right: 18px;
+  margin-right: 20px;
   font-size: 15px;
 }
 .social-icons a:last-child i {
@@ -7491,6 +7547,18 @@ footer {
   top: -webkit-calc(385px/2 - 35px/2);
   top:         calc(385px/2 - 35px/2);
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-control img {
+    top: -webkit-calc(305px/2 - 35px/2);
+    top:         calc(305px/2 - 35px/2);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-control img {
+    top: -webkit-calc(235px/2 - 35px/2);
+    top:         calc(235px/2 - 35px/2);
+  }
+}
 .carousel-control.left img {
   left: 20px;
 }
@@ -7509,7 +7577,6 @@ footer {
   top: 50%;
   left: 50%;
   width: auto;
-  min-width: 100%;
   max-width: initial;
   height: 100%;
   -webkit-transform: translate(-50%, -50%);
@@ -7522,5 +7589,39 @@ footer {
   height:         calc(451px + 3px);
   -webkit-box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, .25);
           box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, .25);
+}
+.submenu {
+  position: absolute;
+  top: 135px;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  background-color: #207f75;
+  -webkit-box-shadow: inset 0 5px 10px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 5px 10px rgba(0, 0, 0, .05);
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+}
+.submenu a {
+  padding-left: 30px;
+  font-size: 14px;
+  color: #d0f0ed;
+  text-decoration: none;
+}
+.submenu a:hover {
+  color: #fff;
 }
 /*# sourceMappingURL=bootstrap.css.map */

@@ -200,6 +200,21 @@ input[type="search"] {
   margin-bottom: 0;
 }
 
+
+.search-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  .container-search {
+    position: relative;
+    width: @search-width;
+    margin-right: @social-space;
+    @media (max-width: @screen-sm-max) { 
+      width: 100%;
+    }
+  }
+}
+
 .search {
   span {
     position: absolute;

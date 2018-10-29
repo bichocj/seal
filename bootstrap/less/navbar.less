@@ -20,6 +20,9 @@
   @media (min-width: @grid-float-breakpoint) {
     border-radius: @navbar-border-radius;
   }
+  @media (max-width: @screen-sm-max) {
+    margin-top: @social-height;
+  }
 }
 
 
@@ -33,6 +36,11 @@
 
   @media (min-width: @grid-float-breakpoint) {
     float: left;
+  }
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+    display: flex;
+    justify-content: center;
+    width: 100%;  
   }
 }
 
@@ -428,7 +436,7 @@
     > li > a {
       color: @navbar-default-link-color;
       font-weight: 400;
-
+      font-size: @font-size-header-links;
       &:hover,
       &:focus {
         color: @navbar-default-link-hover-color;

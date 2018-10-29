@@ -17,6 +17,12 @@
     display: none;
     position: relative;
     height: @size-banner;
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      height: @size-banner-md;
+    }
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      height: @size-banner-sm;
+    }
     .transition(.6s ease-in-out left);
     > img {
       height: 100%;

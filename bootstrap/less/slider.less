@@ -2,6 +2,12 @@
   img {
     position: absolute;
     top: calc(@size-banner/2 - @size-controls/2);
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      top: calc(@size-banner-md/2 - @size-controls/2);
+    }
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      top: calc(@size-banner-sm/2 - @size-controls/2);
+    }
   }
 
   &.left {
