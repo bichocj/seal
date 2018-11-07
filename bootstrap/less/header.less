@@ -6,7 +6,11 @@
 
     li.header-item {
       transition: 0.5s ease;
-
+      @media (max-width: @screen-xs-max) {
+        width: 50%;
+        text-align: left;
+        float: left;
+      }
       a {
         padding: @header-padding-vertical @header-padding-horizontal;
         color: @header-font-color;
@@ -15,6 +19,9 @@
           cursor: pointer;
           color: @brand-info;
         }
+        @media (max-width: @screen-xs-max) { 
+          padding: 0px;
+        }    
       }
     }
   }
@@ -35,6 +42,17 @@
     }
   }
 
+  .header-fonoseal {
+    @media (max-width: @screen-xs-max) {
+      span {
+        display: none;
+      }
+    }    
+    &:after {
+      content: '(054) 381-188';
+    }
+  }
+
   .highlight {
     background-color: @brand-info;
     a {
@@ -44,7 +62,8 @@
       position: absolute;
       top: 0;
       right: 0;
-      margin-right: 15px; 
+      text-align: center;
+      width: 50%;
       a {
         padding-left: @margin-size !important;
         padding-right: @margin-size !important; 
