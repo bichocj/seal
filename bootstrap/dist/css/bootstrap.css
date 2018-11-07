@@ -7377,9 +7377,9 @@ button.close {
   .custom-header .header-fonoseal span {
     display: none;
   }
-}
-.custom-header .header-fonoseal:after {
-  content: '(054) 381-188';
+  .custom-header .header-fonoseal:after {
+    content: '(054) 381-188';
+  }
 }
 .custom-header .highlight {
   background-color: #ef7d00;
@@ -7618,9 +7618,6 @@ footer {
           box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, .25);
 }
 .submenu {
-  position: absolute;
-  top: 135px;
-  left: 0;
   z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7650,5 +7647,17 @@ footer {
 }
 .submenu a:hover {
   color: #fff;
+}
+.triangule {
+  position: absolute;
+  top: 120px;
+  left: 47.3%;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #008477;
+  border-left: 10px solid transparent;
+  -webkit-box-shadow: inset 0 5px 10px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 5px 10px rgba(0, 0, 0, .05);
 }
 /*# sourceMappingURL=bootstrap.css.map */
