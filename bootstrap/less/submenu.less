@@ -11,24 +11,49 @@
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 5px 10px rgba(0,0,0,.05);
-    a {
-        padding-left: @navbar-brand-space;
-        font-size: @font-size-header-links;
-        color: @text-color-primary;
+    ul {
         text-decoration: none;
-        &:hover {
-            color: @text-white;
-        }
+        list-style: none;  
+        margin: 0px;
+        li {
+            display: inline-block;
+            margin-left: @navbar-brand-space;
+            position: relative;
+            .underline {
+                display: none;
+                position: absolute;
+                bottom: -6px;
+                left: calc(50% - @submenu-underline-width/2);
+                width: @submenu-underline-width;
+                height: @submenu-underline-height;
+                margin: 0 auto;
+                background: @brand-info;
+            }
+            &:hover {
+                cursor: pointer;
+                a {
+                    color: @text-white;
+                }      
+                .underline {
+                    display: block;
+                }          
+            }
+            a {
+                font-size: @font-size-header-links;
+                color: @text-color-primary;
+                text-decoration: none;
+            }
+        } 
     }
 }
 .triangule {
     box-shadow: inset 0 5px 10px rgba(0,0,0,.05);
     position: absolute;
-    top: 120px;
+    top: 125px;
     left: 47.3%;
     width: 0;
     height: 0;
     border-right: 10px solid transparent;
-    border-bottom: 15px solid @brand-primary;
+    border-bottom: 10px solid @brand-primary;
     border-left: 10px solid transparent;
 }
