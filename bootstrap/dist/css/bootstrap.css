@@ -7617,19 +7617,6 @@ footer {
   -webkit-box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, .25);
           box-shadow: 5px 5px 17px 0 rgba(0, 0, 0, .25);
 }
-.submenu::before {
-  position: absolute;
-  top: 125px;
-  left: 47.3%;
-  width: 0;
-  height: 0;
-  content: '';
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #008477;
-  border-left: 10px solid transparent;
-  -webkit-box-shadow: inset 0 5px 10px rgba(0, 0, 0, .05);
-          box-shadow: inset 0 5px 10px rgba(0, 0, 0, .05);
-}
 .submenu ul {
   padding: 0;
   margin: 0;
@@ -7638,8 +7625,10 @@ footer {
 .submenu li {
   line-height: 3.5rem;
 }
-.submenu li:hover ul {
-  display: block;
+@media (min-width: 767px) {
+  .submenu li:hover ul {
+    display: block;
+  }
 }
 .submenu li ul {
   position: absolute;
@@ -7694,6 +7683,14 @@ footer {
   left:         calc(50% - 920px/2);
   width: 920px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .submenu > ul > li > ul {
+    top: 235px;
+    left: -webkit-calc(50% - 650px/2);
+    left:         calc(50% - 650px/2);
+    width: 650px;
+  }
+}
 .submenu li li {
   display: table;
   float: left;
@@ -7707,5 +7704,24 @@ footer {
 }
 .submenu li li a:hover {
   color: #666;
+}
+.with-arrow::after {
+  position: absolute;
+  bottom: -6px;
+  left: -webkit-calc(50% - 20px / 2);
+  left:         calc(50% - 20px / 2);
+  width: 0;
+  height: 0;
+  content: '';
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #008477;
+  border-left: 10px solid transparent;
+  -webkit-box-shadow: inset 0 5px 10px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 5px 10px rgba(0, 0, 0, .05);
+}
+@media (max-width: 767px) {
+  .with-arrow::after {
+    display: none;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
