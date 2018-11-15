@@ -1,21 +1,28 @@
-.sealito {
-    height: @sealito-height;
+.sealito-container {
     margin-top: @news-padding-vertical;
-    transition: height 0.3s ease, box-shadow 0.3s ease ;
-    -webkit-transition: height 0.3s ease, box-shadow 0.3s ease ;
-    img {
-        height: 100%;
-        width: auto;
-        max-width: initial;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position: absolute;
-        left: 50%;
-        top: 50%;
+    .sealito {
+        height: @sealito-height;
+        display: inline-block;
+        transition: height 0.3s ease;
+        img {
+            height: 100%;
+            width: auto;
+            max-width: initial;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transition: box-shadow 0.3s ease ;
+            -webkit-transition: box-shadow 0.3s ease ;
+        }
+        &:hover {
+            img {
+                box-shadow: 5px 5px 17px 0px rgba(0,0,0,0.25);
+            }
+            height: calc(@sealito-height + 3px);
+        }
+    
     }
-    &:hover {
-        box-shadow: 5px 5px 17px 0px rgba(0,0,0,0.25);
-        height: calc(@sealito-height + 3px);
-    }
-
 }
+
