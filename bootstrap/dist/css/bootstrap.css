@@ -6870,8 +6870,8 @@ button.close {
   border-top: 1px solid #a8abad;
 }
 .with-shadow {
-  -webkit-box-shadow: 0 9px 18px 5px rgba(0, 0, 0, .23);
-          box-shadow: 0 9px 18px 5px rgba(0, 0, 0, .23);
+  -webkit-box-shadow: 0 5px 18px 5px rgba(0, 0, 0, .23);
+          box-shadow: 0 5px 18px 5px rgba(0, 0, 0, .23);
 }
 .button-container {
   margin-top: -webkit-calc(10px * 2);
