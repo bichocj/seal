@@ -15,12 +15,30 @@
         padding: @header-padding-vertical @header-padding-horizontal;
         color: @header-font-color;
         text-decoration: none;
+        position: relative;
+        .icon_pte {
+          position: absolute;
+          left: 20px;
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          background-image: url(../../../assets/img/icono_pte.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+
+        }
         &:hover, &:focus {
           cursor: pointer;
           color: @brand-info;
+          .icon_pte {
+            background-image: url(../../../assets/img/icono_pte_hover.png);
+          }
         }
         @media (max-width: @screen-xs-max) { 
           padding: 0px;
+          .icon_pte {
+            left: 0px;
+          }
         }    
       }
     }
@@ -49,6 +67,7 @@
       }
       &:after {
         content: '(054) 381-188';
+        margin-left: @margin-size;
       }
     }    
   }
@@ -72,3 +91,5 @@
   }
 
 }
+
+

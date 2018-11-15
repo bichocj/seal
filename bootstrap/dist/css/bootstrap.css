@@ -1576,6 +1576,10 @@ address {
 .text_with_icon {
   margin-left: 10px;
 }
+.text_with_image {
+  margin-left: -webkit-calc(10px + 20px);
+  margin-left:         calc(10px + 20px);
+}
 code,
 kbd,
 pre,
@@ -7432,18 +7436,37 @@ button.close {
   }
 }
 .custom-header .header-item-list li.header-item a {
+  position: relative;
   padding: 8px 25px;
   color: #58595b;
   text-decoration: none;
+}
+.custom-header .header-item-list li.header-item a .icon_pte {
+  position: absolute;
+  left: 20px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url(../../../assets/img/icono_pte.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
 }
 .custom-header .header-item-list li.header-item a:hover,
 .custom-header .header-item-list li.header-item a:focus {
   color: #ef7d00;
   cursor: pointer;
 }
+.custom-header .header-item-list li.header-item a:hover .icon_pte,
+.custom-header .header-item-list li.header-item a:focus .icon_pte {
+  background-image: url(../../../assets/img/icono_pte_hover.png);
+}
 @media (max-width: 767px) {
   .custom-header .header-item-list li.header-item a {
     padding: 0;
+  }
+  .custom-header .header-item-list li.header-item a .icon_pte {
+    left: 0;
   }
 }
 .custom-header .header-item {
@@ -7467,6 +7490,7 @@ button.close {
     display: none;
   }
   .custom-header .header-fonoseal:after {
+    margin-left: 10px;
     content: '(054) 381-188';
   }
 }
