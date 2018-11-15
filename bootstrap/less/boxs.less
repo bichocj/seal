@@ -21,6 +21,10 @@
     background: @box-body-bg;
     border-top: @border-radius-small solid @box-default-color;
     margin-bottom: calc(@margin-size * 2);
+    
+    a {
+      text-decoration: none;
+    }
 
     ul {
       list-style: none;
@@ -97,6 +101,24 @@
           }
         }
       }
+    }
+
+    &.box-menu {
+      margin-top: @margin-size; 
+      ul {
+        padding: 0px @box-menu-space ;
+        li {
+          padding: calc(@box-menu-space/2) 0px;
+        }
+      }
+      hr {
+        margin: 0px @box-menu-space ;
+      }
+    }
+
+    &.box-panel {
+      margin-top: @margin-size;
+      padding:  @box-menu-space ;
     }
 
     .box-pill {
