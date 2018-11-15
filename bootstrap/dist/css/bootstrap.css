@@ -3055,6 +3055,7 @@ select[multiple].input-lg {
 }
 .forms {
   padding: 25px 30px;
+  margin: 20px;
 }
 .forms input {
   padding: 0;
@@ -3066,8 +3067,24 @@ select[multiple].input-lg {
   font-size: 17px;
   font-weight: 600;
 }
+.forms .forms-body .form-group {
+  margin-bottom: 5px;
+}
+.forms .forms-captcha {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .forms .forms-footer {
+  margin-top: 10px;
   text-align: center;
+}
+.forms.forms-links {
+  margin-top: 15px;
+}
+.forms.forms-links a {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
 }
 .forms-primary {
   color: #008477;
