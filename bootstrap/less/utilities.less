@@ -161,6 +161,23 @@
   background-color: @brand-info;
 }
 
+.bg-image {
+  background-image: url(../../../assets/img/background_ofv.jpg);
+  background-size: cover;
+  background-position-y: -270px;
+  
+  a {
+    color: @text-color-primary;
+    text-decoration: none !important;
+    font-size: @font-size-footer;
+    margin-top: calc(@margin-size + 5px);
+    &:hover, &:focus {
+      color: @text-white;
+      cursor: pointer;
+    }
+  }
+}
+
 .centered {
   position: absolute;
   top: 50%;

@@ -643,11 +643,18 @@ input[type="checkbox"] {
     margin-top: @margin-size;
   }
   &.forms-links {
-    margin-top: 15px; 
+    margin: 0;
+    padding: 25px 0 0 0;
     a {
       font-size: @font-size-footer-directions;
       display: block;
       margin-top: 5px;
+      color: @brand-primary;
+      font-weight: 500;
+      &:hover, &:focus {
+        cursor: pointer;
+        color: @brand-primary;
+      }
     }
   }
 }
