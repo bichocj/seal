@@ -164,8 +164,9 @@
 .bg-image {
   background-image: url(../../../assets/img/background_ofv.jpg);
   background-size: cover;
-  background-position-y: -270px;
-  
+  @media (min-width: @screen-lg-min) { 
+    background-position-y: -270px;
+  }
   a {
     color: @text-color-primary;
     text-decoration: none !important;

@@ -6913,9 +6913,13 @@ button.close {
 }
 .bg-image {
   background-image: url(../../../assets/img/background_ofv.jpg);
-  background-position-y: -270px;
   -webkit-background-size: cover;
           background-size: cover;
+}
+@media (min-width: 1200px) {
+  .bg-image {
+    background-position-y: -270px;
+  }
 }
 .bg-image a {
   margin-top: -webkit-calc(10px + 5px);
