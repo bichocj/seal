@@ -6912,6 +6912,7 @@ button.close {
   background-color: #ef7d00;
 }
 .bg-image {
+  height: 100vh;
   background-image: url(../../../assets/img/fondoA2.png);
   -webkit-background-size: cover;
           background-size: cover;
